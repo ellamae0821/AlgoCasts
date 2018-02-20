@@ -23,3 +23,16 @@ function fib(n) {
 }
 
 module.exports = fib;
+
+//store the arguments of each function call along with th result. If the function os called again with the same arguments, return the precomputed result, rather than running the function again.
+
+/*RECURSIVE
+
+
+function fib(n){
+  if(n < 2){
+    return n;
+  }
+  return fib(n - 1) + fib(n - 2);
+}
+*/
