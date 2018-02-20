@@ -19,9 +19,11 @@
 
 function steps(n) {
   for (let i=0; i<n; i++){
+    //row
     let stair = '';
 
     for (let j=0; j<n; j++){
+      //column
       if (j <= i) {
         stair += '#';
       } else {
