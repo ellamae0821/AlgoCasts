@@ -49,3 +49,14 @@ module.exports = anagrams;
 //
 //   return charMap;
 // }
+
+
+function isAnagram1 (strA, strB){
+  let a = strA.toLowerCase();
+  let b = strB.toLowerCase();
+
+  a = a.split('').sort().join('');
+  b = b.split('').sort().join('');
+
+  return a == b;
+}
