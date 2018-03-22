@@ -17,7 +17,6 @@ function capitalize(str) {
       result += str[i];
     }
   }
-
   return result;
 }
 
@@ -32,3 +31,13 @@ module.exports = capitalize;
 //
 //   return words.join(' ');
 // }
+
+
+function capitalize(str){
+  let words = [];
+
+  for (let word in str.split(' ')){
+    words.push([word[0].toUpperCase] + word.slice(1))
+  }
+  return words;
+}
